@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export class AddTodos extends Component {
 	state = {
@@ -39,3 +40,8 @@ onChange = (e) => {
 }
 
 export default AddTodos
+
+// PropTypes
+AddTodos.propTypes = {
+	addTodo: PropTypes.func.isRequired,
+}

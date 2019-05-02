@@ -61,5 +61,7 @@ const btnStyle = {
 
 // PropTypes
 TodoItem.propTypes = {
-	todo: PropTypes.object.isRequired
+	todo: PropTypes.object.isRequired,
+	toogleComplete: PropTypes.func.isRequired,
+	delTodo: PropTypes.func.isRequired
 }
