@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-export default function SongList() {
-	return (
-		<div>
-			
-		</div>
-	)
+class SongList extends Component {
+
+
+	render() {
+		return (
+			<div>
+				Songs List
+			</div>
+		)
+	}
 }
+
+export default connect()(SongList);
+
